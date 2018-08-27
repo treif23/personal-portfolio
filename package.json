@@ -1,0 +1,22 @@
+{
+  "name": "acecv",
+  "version": "1.0.0",
+  "description": "Author: \t\tKeenThemes\r Website: \t\thttp://www.keenthemes.com/\r Contact: \t\tsupport@keenthemes.com\r Follow: \t\thttp://twitter.com/keenthemes\r Like: \t\t\thttp://facebook.com/keenthemes",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run less && webpack",
+    "start": "node server.js",
+    "less": "lessc src/css/style.less dist/css/style.css",
+    "lint": "eslint .",
+    "test": "npm run build && mocha test/.setup.js test/*.spec.js --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "node": "^10.8.0"
+  }
+}
